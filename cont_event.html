@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>컨텐츠 관리 - 이벤트/할인</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <script src="js/common.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="store_page">
+        <header class="common_head">
+          <div class="container">
+            <div class="header">
+              <h1 class="head_logo"><a href="index.html">LOGO</a></h1>
+              <ul class="gnb">
+                <li>
+                  <a href="store_inquiry.html">점포 관리</a>
+                  <ul class="lnb">
+                    <li><a href="store_inquiry.html">점포 조회</a></li>
+                    <li><a href="store_rg.html">점포 등록</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="qr_code.html">QR코드</a>
+                  <ul class="lnb">
+                    <li><a href="qr_code.html">코드 관리</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="notice.html">커뮤니티</a>
+                  <ul class="lnb">
+                    <li><a href="notice.html">공지사항</a></li>
+                    <li><a href="ask.html">문의 관리</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">컨텐츠관리</a>
+                  <ul class="lnb">
+                    <li><a href="contents.html">메뉴</a></li>
+                    <li><a href="cont_category.html">카테고리 관리</a></li>
+                    <li><a href="cont_main.html">메인이미지/소개</a></li>
+                    <li><a href="cont_event.html">이벤트·할인</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="banner.html">배너관리</a>
+                  <ul class="lnb">
+                    <li><a href="banner.html">배너 관리</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="order_inquiry.html">주문조회</a>
+                  <ul class="lnb">
+                    <li><a href="order_inquiry.html">주문 조회(주문자)</a></li>
+                    <li><a href="order_store.html">주문 조회(점포별)</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="best.html">추천업소</a>
+                </li>
+                <li>
+                  <a href="tourism.html">관광지 설정</a>
+                </li>
+                <li>
+                  <a href="system.html" class="line" target="_blank"
+                    >관제시스템</a
+                  >
+                </li>
+              </ul>
+              <div class="head_btn">
+                <button onclick="location.href='login.html'">로그아웃</button>
+              </div>
+            </div>
+          </div>
+        </header>
+        <aside class="visit_count">
+          <div class="container">
+            <div class="count_box">
+              <p>관리자 페이지입니다.</p>
+              <ul>
+                <li>오늘 방문자 <span>16</span></li>
+                <li>전체 방문자 <span>3,765</span></li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+        <main>
+          <div class="container">
+            <div class="sub_page">
+              <div class="sub_common">
+                <h2>컨텐츠 관리 - <span>이벤트/할인</span></h2>
+                <ul>
+                  <li><a href="#">홈 &nbsp; > &nbsp;</a></li>
+                  <li><a href="#">컨텐츠 관리 &nbsp; > &nbsp; </a></li>
+                  <li><a href="#">이벤트/할인</a></li>
+                  <li class="common_set">
+                    <a href="#">
+                      <i class="icon_set_off"></i>
+                      <div>초기화</div>
+                    </a>
+                    <a href="#">
+                      <i class="icon_set_on"></i>
+                      <div>초기화</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <section class="sub_contents sub_notice">
+                <div class="sub_inquiry_box">
+                  <div class="sub_store_search">
+                    <ul>
+                      <li class="search_option_box">
+                        <div class="search_select">
+                          <a href="#">아이디</a>
+                        </div>
+                        <ul class="search_option">
+                          <li><a href="#">아이디</a></li>
+                          <li><a href="#">점주명</a></li>
+                          <li><a href="#">전화번호</a></li>
+                          <li><a href="#">휴대폰 번호</a></li>
+                          <li><a href="#">가입일시</a></li>
+                        </ul>
+                      </li>
+                      <li class="search_bar">
+                        <input
+                          type="text"
+                          placeholder="검색어를 입력해주세요."
+                        />
+                      </li>
+                      <li class="btn_search">
+                        <button>검색</button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="delete_btn">
+                    <button><i class="icon_delete_close"></i>선택 삭제</button>
+                  </div>
+                </div>
+                <div class="sub_cont_table sub_notice_table">
+                  <div class="tab_active sub_order_item">
+                    <table class="sub_cont_card">
+                      <thead>
+                        <tr>
+                          <th class="inquiry_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </th>
+                          <th>아이디</th>
+                          <th>점포명</th>
+                          <th>이름</th>
+                          <th>등록일</th>
+                          <th>수정일</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="inquity_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </td>
+                          <td><a href="store_inquiry.html">01234567890</a></td>
+                          <td>
+                            <span>남해회관</span>
+                          </td>
+                          <td>
+                            <span>
+                              <a href="cont_main_menu.html"
+                                >냉삼 6인분 이상 주문 시 차돌된장찌개가 무료!</a
+                              >
+                            </span>
+                          </td>
+                          <td>22-09-22 17:37:45</td>
+                          <td>22-09-23 11:34:54</td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <td class="inquity_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </td>
+                          <td><a href="store_inquiry.html">01234567890</a></td>
+                          <td>
+                            <span>칼국수는너무너무맛있어</span>
+                          </td>
+                          <td>
+                            <span>
+                              <a href="cont_main_menu.html"
+                                >옛날식 수타 칼국수를 즐겨보세요. 1주년 이벤트를
+                                진행합니다</a
+                              >
+                            </span>
+                          </td>
+                          <td>22-09-22 17:37:45</td>
+                          <td>22-09-23 11:34:54</td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <td class="inquity_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </td>
+                          <td><a href="store_inquiry.html">01234567890</a></td>
+                          <td>
+                            <span>남해회관</span>
+                          </td>
+                          <td>
+                            <span>
+                              <a href="cont_main_menu.html"
+                                >냉삼 6인분 이상 주문 시 차돌된장찌개가 무료!</a
+                              >
+                            </span>
+                          </td>
+                          <td>22-09-22 17:37:45</td>
+                          <td>22-09-23 11:34:54</td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <td class="inquity_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </td>
+                          <td><a href="store_inquiry.html">01234567890</a></td>
+                          <td>
+                            <span>칼국수는너무너무맛있어</span>
+                          </td>
+                          <td>
+                            <span>
+                              <a href="cont_main_menu.html"
+                                >옛날식 수타 칼국수를 즐겨보세요. 1주년 이벤트를
+                                진행합니다</a
+                              >
+                            </span>
+                          </td>
+                          <td>22-09-22 17:37:45</td>
+                          <td>22-09-23 11:34:54</td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <td class="inquity_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </td>
+                          <td><a href="store_inquiry.html">01234567890</a></td>
+                          <td>
+                            <span>남해회관</span>
+                          </td>
+                          <td>
+                            <span>
+                              <a href="cont_main_menu.html"
+                                >냉삼 6인분 이상 주문 시 차돌된장찌개가 무료!</a
+                              >
+                            </span>
+                          </td>
+                          <td>22-09-22 17:37:45</td>
+                          <td>22-09-23 11:34:54</td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <td class="inquity_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </td>
+                          <td><a href="store_inquiry.html">01234567890</a></td>
+                          <td>
+                            <span>칼국수는너무너무맛있어</span>
+                          </td>
+                          <td>
+                            <span>
+                              <a href="cont_main_menu.html"
+                                >옛날식 수타 칼국수를 즐겨보세요. 1주년 이벤트를
+                                진행합니다</a
+                              >
+                            </span>
+                          </td>
+                          <td>22-09-22 17:37:45</td>
+                          <td>22-09-23 11:34:54</td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <td class="inquity_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </td>
+                          <td><a href="store_inquiry.html">01234567890</a></td>
+                          <td>
+                            <span>남해회관</span>
+                          </td>
+                          <td>
+                            <span>
+                              <a href="cont_main_menu.html"
+                                >냉삼 6인분 이상 주문 시 차돌된장찌개가 무료!</a
+                              >
+                            </span>
+                          </td>
+                          <td>22-09-22 17:37:45</td>
+                          <td>22-09-23 11:34:54</td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <td class="inquity_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </td>
+                          <td><a href="store_inquiry.html">01234567890</a></td>
+                          <td>
+                            <span>칼국수는너무너무맛있어</span>
+                          </td>
+                          <td>
+                            <span>
+                              <a href="cont_main_menu.html"
+                                >옛날식 수타 칼국수를 즐겨보세요. 1주년 이벤트를
+                                진행합니다</a
+                              >
+                            </span>
+                          </td>
+                          <td>22-09-22 17:37:45</td>
+                          <td>22-09-23 11:34:54</td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <td class="inquity_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </td>
+                          <td><a href="store_inquiry.html">01234567890</a></td>
+                          <td>
+                            <span>남해회관</span>
+                          </td>
+                          <td>
+                            <span>
+                              <a href="cont_main_menu.html"
+                                >냉삼 6인분 이상 주문 시 차돌된장찌개가 무료!</a
+                              >
+                            </span>
+                          </td>
+                          <td>22-09-22 17:37:45</td>
+                          <td>22-09-23 11:34:54</td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <td class="inquity_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </td>
+                          <td><a href="store_inquiry.html">01234567890</a></td>
+                          <td>
+                            <span>칼국수는너무너무맛있어</span>
+                          </td>
+                          <td>
+                            <span>
+                              <a href="cont_main_menu.html"
+                                >옛날식 수타 칼국수를 즐겨보세요. 1주년 이벤트를
+                                진행합니다</a
+                              >
+                            </span>
+                          </td>
+                          <td>22-09-22 17:37:45</td>
+                          <td>22-09-23 11:34:54</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="pagination">
+                  <a href="#">
+                    <i class="icon_pg_left_off"></i>
+                    <i class="icon_pg_left_on"></i>
+                  </a>
+                  <a href="#">1</a>
+                  <a href="#">2</a>
+                  <a href="#">3</a>
+                  <a href="#">4</a>
+                  <a href="#">5</a>
+                  <a href="#">6</a>
+                  <a href="#">7</a>
+                  <a href="#">8</a>
+                  <a href="#">9</a>
+                  <a href="#">10</a>
+                  <a href="#">
+                    <i class="icon_pg_right_off"></i>
+                    <i class="icon_pg_right_on"></i>
+                  </a>
+                </div>
+              </section>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
