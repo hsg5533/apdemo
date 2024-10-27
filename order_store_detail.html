@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>주문 조회 - 주문 상세 내역(점포별)</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <script src="js/common.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="store_page">
+        <header class="common_head">
+          <div class="container">
+            <div class="header">
+              <h1 class="head_logo"><a href="index.html">LOGO</a></h1>
+              <ul class="gnb">
+                <li>
+                  <a href="store_inquiry.html">점포 관리</a>
+                  <ul class="lnb">
+                    <li><a href="store_inquiry.html">점포 조회</a></li>
+                    <li><a href="store_rg.html">점포 등록</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="qr_code.html">QR코드</a>
+                  <ul class="lnb">
+                    <li><a href="qr_code.html">코드 관리</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="notice.html">커뮤니티</a>
+                  <ul class="lnb">
+                    <li><a href="notice.html">공지사항</a></li>
+                    <li><a href="ask.html">문의 관리</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">컨텐츠관리</a>
+                  <ul class="lnb">
+                    <li><a href="contents.html">메뉴</a></li>
+                    <li><a href="cont_category.html">카테고리 관리</a></li>
+                    <li><a href="cont_main.html">메인이미지/소개</a></li>
+                    <li><a href="cont_event.html">이벤트·할인</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="banner.html">배너관리</a>
+                  <ul class="lnb">
+                    <li><a href="banner.html">배너 관리</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="order_inquiry.html">주문조회</a>
+                  <ul class="lnb">
+                    <li><a href="order_inquiry.html">주문 조회(주문자)</a></li>
+                    <li><a href="order_store.html">주문 조회(점포별)</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="best.html">추천업소</a>
+                </li>
+                <li>
+                  <a href="tourism.html">관광지 설정</a>
+                </li>
+                <li>
+                  <a href="system.html" class="line" target="_blank"
+                    >관제시스템</a
+                  >
+                </li>
+              </ul>
+              <div class="head_btn">
+                <button onclick="location.href='login.html'">로그아웃</button>
+              </div>
+            </div>
+          </div>
+        </header>
+        <aside class="visit_count">
+          <div class="container">
+            <div class="count_box">
+              <p>관리자 페이지입니다.</p>
+              <ul>
+                <li>오늘 방문자 <span>16</span></li>
+                <li>전체 방문자 <span>3,765</span></li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+        <main>
+          <div class="container">
+            <div class="sub_page">
+              <div class="sub_common">
+                <h2>주문 조회 - <span>주문 상세 내역(점포별)</span></h2>
+                <ul>
+                  <li><a href="#">홈 &nbsp; > &nbsp;</a></li>
+                  <li><a href="#">주문 조회 &nbsp; > &nbsp; </a></li>
+                  <li><a href="#">주문 상세 내역(점포별)</a></li>
+                  <li class="common_set">
+                    <a href="#">
+                      <i class="icon_set_off"></i>
+                      <div>초기화</div>
+                    </a>
+                    <a href="#">
+                      <i class="icon_set_on"></i>
+                      <div>초기화</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <section class="order_store_detail">
+                <div class="sub_inquiry_box">
+                  <ul class="order_num_txt inquiry_txt">
+                    <li>
+                      <h2 class="accent_color">콩마당두부장수</h2>
+                    </li>
+                    <li><span>5 건</span>총 합계<span>74,000 원</span></li>
+                  </ul>
+                </div>
+                <div class="order_store_history">
+                  <ul class="order_num_txt inquiry_txt">
+                    <li>
+                      전체 주문 건 수<span class="inquiry_num"
+                        >2022110216235577</span
+                      >
+                    </li>
+                    <li>총 합계 <span>4,000 원</span></li>
+                  </ul>
+                  <div class="sub_inquiry_item">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>주문 일자</th>
+                          <th>상품명</th>
+                          <th>금액</th>
+                          <th>합계 금액</th>
+                          <th>상태</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="inquiry_num">22-11-02 16:40:44</td>
+                          <td>가마솥 즉석두부 X 1</td>
+                          <td>4,000 원</td>
+                          <td>4,000 원</td>
+                          <td class="dark_04_color">준비</td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <ul class="payment_history">
+                              <li>
+                                <div class="order_tit">
+                                  <h3>주문하신 분</h3>
+                                </div>
+                                <ul>
+                                  <li>
+                                    <span>이름</span>
+                                    <span>홍길동</span>
+                                  </li>
+                                  <li>
+                                    <span>핸드폰</span>
+                                    <span>010-1234-5678</span>
+                                  </li>
+                                  <li>
+                                    <span>주소</span>
+                                    <span
+                                      >(01014) 서울 강북구 수유동 563-15,
+                                      2</span
+                                    >
+                                  </li>
+                                  <li>
+                                    <span>이메일</span>
+                                    <span>123456@naver.com</span>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <div class="order_tit">
+                                  <h3>받으시는 분</h3>
+                                </div>
+                                <ul>
+                                  <li>
+                                    <span>이름</span>
+                                    <span>홍길동</span>
+                                  </li>
+                                  <li>
+                                    <span>핸드폰</span>
+                                    <span>010-1234-5678</span>
+                                  </li>
+                                  <li>
+                                    <span>주소</span>
+                                    <span
+                                      >(01014) 서울 강북구 수유동 563-15,
+                                      2</span
+                                    >
+                                  </li>
+                                  <li>
+                                    <span>전달메세지</span>
+                                    <span>-</span>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="order_store_history">
+                  <ul class="order_num_txt inquiry_txt">
+                    <li>
+                      전체 주문 건 수<span class="inquiry_num"
+                        >2022110216235599</span
+                      >
+                    </li>
+                    <li>총 합계 <span>14,000 원</span></li>
+                  </ul>
+                  <div class="sub_inquiry_item">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>주문 일자</th>
+                          <th>상품명</th>
+                          <th>금액</th>
+                          <th>합계 금액</th>
+                          <th>상태</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="inquiry_num">22-11-02 16:40:44</td>
+                          <td>
+                            <ul class="store_history_cont">
+                              <li>두부과자 X 1</li>
+                              <li>가마솥 즉석두부 X 1</li>
+                              <li>가마솥 즉석두부 X 1</li>
+                            </ul>
+                          </td>
+                          <td>
+                            <ul class="store_history_cont">
+                              <li><s>8,000</s>→ 6,000원</li>
+                              <li>4,000 원</li>
+                              <li>4,000 원</li>
+                            </ul>
+                          </td>
+                          <td>14,000 원</td>
+                          <td class="accent_color">배송</td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <ul class="payment_history">
+                              <li>
+                                <div class="order_tit">
+                                  <h3>주문하신 분</h3>
+                                </div>
+                                <ul>
+                                  <li>
+                                    <span>이름</span>
+                                    <span>홍길동</span>
+                                  </li>
+                                  <li>
+                                    <span>핸드폰</span>
+                                    <span>010-1234-5678</span>
+                                  </li>
+                                  <li>
+                                    <span>주소</span>
+                                    <span
+                                      >(01014) 서울 강북구 수유동 563-15,
+                                      2</span
+                                    >
+                                  </li>
+                                  <li>
+                                    <span>이메일</span>
+                                    <span>123456@naver.com</span>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <div class="order_tit">
+                                  <h3>받으시는 분</h3>
+                                </div>
+                                <ul>
+                                  <li>
+                                    <span>이름</span>
+                                    <span>홍길동</span>
+                                  </li>
+                                  <li>
+                                    <span>핸드폰</span>
+                                    <span>010-1234-5678</span>
+                                  </li>
+                                  <li>
+                                    <span>주소</span>
+                                    <span
+                                      >(01014) 서울 강북구 수유동 563-15,
+                                      2</span
+                                    >
+                                  </li>
+                                  <li>
+                                    <span>전달메세지</span>
+                                    <span>-</span>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <ul class="pagination notice_btn">
+                  <li>
+                    <a href="#">
+                      <i class="icon_pg_left_off"></i>
+                      <i class="icon_pg_left_on"></i
+                    ></a>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a href="#">9</a>
+                    <a href="#">10</a>
+                    <a href="#">
+                      <i class="icon_pg_right_off"></i>
+                      <i class="icon_pg_right_on"></i>
+                    </a>
+                  </li>
+                  <li class="list_btn">
+                    <button onclick="location.href='order_store.html'">
+                      목록
+                    </button>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

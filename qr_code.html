@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR 코드페이지</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <script src="js/common.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="store_page">
+        <header class="common_head">
+          <div class="container">
+            <div class="header">
+              <h1 class="head_logo"><a href="index.html">LOGO</a></h1>
+              <ul class="gnb">
+                <li>
+                  <a href="store_inquiry.html">점포 관리</a>
+                  <ul class="lnb">
+                    <li><a href="store_inquiry.html">점포 조회</a></li>
+                    <li><a href="store_rg.html">점포 등록</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="qr_code.html">QR코드</a>
+                  <ul class="lnb">
+                    <li><a href="qr_code.html">코드 관리</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="notice.html">커뮤니티</a>
+                  <ul class="lnb">
+                    <li><a href="notice.html">공지사항</a></li>
+                    <li><a href="ask.html">문의 관리</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">컨텐츠관리</a>
+                  <ul class="lnb">
+                    <li><a href="contents.html">메뉴</a></li>
+                    <li><a href="cont_category.html">카테고리 관리</a></li>
+                    <li><a href="cont_main.html">메인이미지/소개</a></li>
+                    <li><a href="cont_event.html">이벤트·할인</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="banner.html">배너관리</a>
+                  <ul class="lnb">
+                    <li><a href="banner.html">배너 관리</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="order_inquiry.html">주문조회</a>
+                  <ul class="lnb">
+                    <li><a href="order_inquiry.html">주문 조회(주문자)</a></li>
+                    <li><a href="order_store.html">주문 조회(점포별)</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="best.html">추천업소</a>
+                </li>
+                <li>
+                  <a href="tourism.html">관광지 설정</a>
+                </li>
+                <li>
+                  <a href="system.html" class="line" target="_blank"
+                    >관제시스템</a
+                  >
+                </li>
+              </ul>
+              <div class="head_btn">
+                <button onclick="location.href='login.html'">로그아웃</button>
+              </div>
+            </div>
+          </div>
+        </header>
+        <aside class="visit_count">
+          <div class="container">
+            <div class="count_box">
+              <p>관리자 페이지입니다.</p>
+              <ul>
+                <li>오늘 방문자 <span>16</span></li>
+                <li>전체 방문자 <span>3,765</span></li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+        <main>
+          <div class="container">
+            <div class="sub_page">
+              <div class="sub_common">
+                <h2>코드 관리</h2>
+                <ul>
+                  <li><a href="#">홈 &nbsp; > &nbsp;</a></li>
+                  <li><a href="#">QR 코드 &nbsp; > &nbsp; </a></li>
+                  <li><a href="#">코드 관리</a></li>
+                  <li class="common_set">
+                    <a href="#">
+                      <i class="icon_set_off"></i>
+                      <div>초기화</div>
+                    </a>
+                    <a href="#">
+                      <i class="icon_set_on"></i>
+                      <div>초기화</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <section class="sub_qr_code">
+                <div class="sub_inquiry_box">
+                  <div class="sub_store_search">
+                    <ul>
+                      <li class="search_option_box">
+                        <div class="search_select">
+                          <a href="#">아이디</a>
+                        </div>
+                        <ul class="search_option">
+                          <li><a href="#">아이디</a></li>
+                          <li><a href="#">점주명</a></li>
+                          <li><a href="#">전화번호</a></li>
+                          <li><a href="#">휴대폰 번호</a></li>
+                          <li><a href="#">가입일시</a></li>
+                        </ul>
+                      </li>
+                      <li class="search_bar">
+                        <input
+                          type="text"
+                          placeholder="검색어를 입력해주세요."
+                        />
+                      </li>
+                      <li class="btn_search">
+                        <button>검색</button>
+                      </li>
+                    </ul>
+                  </div>
+                  <ul class="qr_code_btn">
+                    <li class="excel_btn">
+                      <button>
+                        <i class="icon_download"></i>EXCEL 다운로드
+                      </button>
+                    </li>
+                    <li class="code_regist_btn">
+                      <button><i class="icon_code_down"></i>코드 등록</button>
+                    </li>
+                  </ul>
+                  <div class="code_regist_card">
+                    <div class="code_regist_box">
+                      <div class="code_regist_tit">
+                        <h2>코드 등록</h2>
+                      </div>
+                      <ul class="code_regist_list">
+                        <li>
+                          <h3>수동 코드생성</h3>
+                          <p>
+                            코드 수동 생성 시 1개씩 생성되며,<br />테이블 번호와
+                            코드를 입력하여 생성합니다.
+                          </p>
+                          <ul class="create_btn">
+                            <li>
+                              <span>테이블 번호</span
+                              ><input type="text" placeholder="예시) 1" />
+                              <button>등록</button>
+                            </li>
+                            <li>
+                              <span>생성 코드</span
+                              ><input type="text" placeholder="예시) 63E7KV" />
+                              <button>등록</button>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h3>자동 코드생성</h3>
+                          <p>
+                            코드 자동 생서 시 입력된 개수만큼 생성되며,<br />
+                            테이블 번호와 생성 개수를 입력하여 생성합니다.
+                          </p>
+                          <ul class="create_btn">
+                            <li>
+                              <span>테이블 번호</span
+                              ><input type="text" placeholder="예시) 1" />
+                              <button>등록</button>
+                            </li>
+                            <li>
+                              <span>생성 갯수</span
+                              ><input type="text" placeholder="예시) 15" />
+                              <button>등록</button>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h3>연속 코드생성</h3>
+                          <p>
+                            시작번호로부터 연속하여 테이블 개수만큼 생성합니다.
+                            &nbsp;<br />
+                          </p>
+                          <ul class="create_btn">
+                            <li>
+                              <span>시작<br />테이블 번호</span
+                              ><input type="text" placeholder="예시) 1" />
+                              <button>등록</button>
+                            </li>
+                            <li>
+                              <span>테이블 갯수</span
+                              ><input type="text" placeholder="예시) 15" />
+                              <button>등록</button>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="sub_order_card sub_order_item">
+                  <div class="sub_tab_box">
+                    <ul class="sub_order_tab">
+                      <li><a href="#" class="tab_active">전체</a></li>
+                      <li><a href="#">사용</a></li>
+                      <li><a href="#">미사용</a></li>
+                    </ul>
+                    <ul class="sub_page_num">
+                      <li>전체 25건<span>1 페이지</span></li>
+                      <li class="order_button">
+                        <button><i class="icon_select_ck"></i>선택 발주</button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab_active sub_tab_cont">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th class="inquiry_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </th>
+                          <th>
+                            <div class="order_option_box">
+                              <div class="order_select">
+                                <a href="#"
+                                  >발주
+                                  <i class="icon_order_down"></i>
+                                </a>
+                              </div>
+                              <ul class="order_option">
+                                <li><a href="#">발주</a></li>
+                                <li><a href="#">미발주</a></li>
+                              </ul>
+                            </div>
+                          </th>
+                          <th>코드</th>
+                          <th>URL</th>
+                          <th>QR코드</th>
+                          <th>가맹점ID</th>
+                          <th>설치장소</th>
+                          <th>
+                            <div class="order_option_box">
+                              <div class="order_select">
+                                <a href="#"
+                                  >테이블번호
+                                  <i class="icon_order_down"></i>
+                                </a>
+                              </div>
+                              <ul class="order_option">
+                                <li><a href="#">1번</a></li>
+                                <li><a href="#">2번</a></li>
+                                <li><a href="#">3번</a></li>
+                                <li><a href="#">4번</a></li>
+                                <li><a href="#">5번</a></li>
+                                <li><a href="#">6번</a></li>
+                                <li><a href="#">7번</a></li>
+                                <li><a href="#">8번</a></li>
+                                <li><a href="#">9번</a></li>
+                                <li><a href="#">10번</a></li>
+                              </ul>
+                            </div>
+                          </th>
+                          <th>상태</th>
+                          <th>QR생성</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="inquity_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </td>
+                          <td id="uninstall">미발주</td>
+                          <td>FHBWVV</td>
+                          <td><a href="#">/?code=FI9IRQ&tno=10/?</a></td>
+                          <td>
+                            <a href="#" class="qr_icon_btn"
+                              ><img
+                                src="img/image/qr_small_img.png"
+                                alt="QR코드"
+                            /></a>
+                            <div class="qr_modal">
+                              <div class="qr_modal_box"></div>
+                              <div class="qr_modal_card">
+                                <img
+                                  src="img/image/qr_big_img.png"
+                                  alt="QR코드"
+                                />
+                              </div>
+                            </div>
+                          </td>
+                          <td>050713283588</td>
+                          <td>
+                            <span>마산수산</span>
+                          </td>
+                          <td>1번</td>
+                          <td id="uninstall">미사용</td>
+                          <td>
+                            <div class="inquiry_detail">
+                              <a href="#">생성</a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <td class="inquity_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </td>
+                          <td class="order_bg_color">발주</td>
+                          <td>FHBWVV</td>
+                          <td><a href="#">/?code=FI9IRQ&tno=10</a></td>
+                          <td></td>
+                          <td>050713283588</td>
+                          <td>
+                            <span>신유경의 맛있는 경양식 수제돈까스</span>
+                          </td>
+                          <td>1번</td>
+                          <td id="uninstall">미사용</td>
+                          <td>
+                            <div class="inquiry_detail">
+                              <a href="#">생성</a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <td class="inquity_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </td>
+                          <td id="uninstall">미발주</td>
+                          <td>FHBWVV</td>
+                          <td><a href="#">/?code=FI9IRQ&tno=10</a></td>
+                          <td></td>
+                          <td>050713283588</td>
+                          <td>
+                            <span>마산수산</span>
+                          </td>
+                          <td>1번</td>
+                          <td id="uninstall">미사용</td>
+                          <td>
+                            <div class="inquiry_edit">
+                              <a href="#">다운</a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <td class="inquity_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </td>
+                          <td class="order_bg_color">발주</td>
+                          <td>FHBWVV</td>
+                          <td><a href="#">/?code=FI9IRQ&tno=10</a></td>
+                          <td></td>
+                          <td>050713283588</td>
+                          <td>
+                            <span>신유경의 맛있는 경양식 수제돈까스</span>
+                          </td>
+                          <td>1번</td>
+                          <td>사용</td>
+                          <td>
+                            <div class="inquiry_edit">
+                              <a href="#">다운</a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <td class="inquity_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </td>
+                          <td id="uninstall">미발주</td>
+                          <td>FHBWVV</td>
+                          <td><a href="#">/?code=FI9IRQ&tno=10</a></td>
+                          <td></td>
+                          <td>050713283588</td>
+                          <td>
+                            <div class="connect_btn">
+                              <button>연결</button>
+                              <ul class="connect_regist">
+                                <h3>점포명</h3>
+                                <div class="connect_regist_card">
+                                  <div class="search_option_box">
+                                    <div class="search_select">
+                                      <a href="#"
+                                        >선택하세요
+                                        <i class="icon_id_down"></i>
+                                      </a>
+                                    </div>
+                                    <ul class="search_option">
+                                      <li>
+                                        <input
+                                          type="text"
+                                          placeholder="검색어 입력"
+                                        />
+                                      </li>
+                                      <li>
+                                        <a href="#">달반늘</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">88회관</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">로아루</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">복이분식</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">갈비맛있다</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div><button>연결 등록</button></div>
+                                </div>
+                              </ul>
+                            </div>
+                          </td>
+                          <td>1번</td>
+                          <td id="uninstall">미사용</td>
+                          <td>
+                            <div class="inquiry_edit">
+                              <a href="#">다운</a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <td class="inquity_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </td>
+                          <td class="order_bg_color">발주</td>
+                          <td>FHBWVV</td>
+                          <td><a href="#">/?code=FI9IRQ&tno=10</a></td>
+                          <td></td>
+                          <td>050713283588</td>
+                          <td>
+                            <span>신유경의 맛있는 경양식 수제돈까스</span>
+                          </td>
+                          <td>1번</td>
+                          <td>사용</td>
+                          <td>
+                            <div class="inquiry_detail">
+                              <a href="#">생성</a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <td class="inquity_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </td>
+                          <td id="uninstall">미발주</td>
+                          <td>FHBWVV</td>
+                          <td><a href="#">/?code=FI9IRQ&tno=10</a></td>
+                          <td></td>
+                          <td>050713283588</td>
+                          <td>
+                            <span>마산수산</span>
+                          </td>
+                          <td>1번</td>
+                          <td id="uninstall">미사용</td>
+                          <td>
+                            <div class="inquiry_edit">
+                              <a href="#">다운</a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <td class="inquity_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </td>
+                          <td class="order_bg_color">발주</td>
+                          <td>FHBWVV</td>
+                          <td><a href="#">/?code=FI9IRQ&tno=10</a></td>
+                          <td></td>
+                          <td>050713283588</td>
+                          <td>
+                            <span>신유경의 맛있는 경양식 수제돈까스</span>
+                          </td>
+                          <td>1번</td>
+                          <td>사용</td>
+                          <td>
+                            <div class="inquiry_detail">
+                              <a href="#">생성</a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <td class="inquity_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </td>
+                          <td class="order_bg_color">발주</td>
+                          <td>FHBWVV</td>
+                          <td><a href="#">/?code=FI9IRQ&tno=10</a></td>
+                          <td></td>
+                          <td>050713283588</td>
+                          <td>
+                            <span>마산수산</span>
+                          </td>
+                          <td>1번</td>
+                          <td>사용</td>
+                          <td>
+                            <div class="inquiry_detail">
+                              <a href="#">생성</a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <td class="inquity_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </td>
+                          <td class="order_bg_color">발주</td>
+                          <td>FHBWVV</td>
+                          <td><a href="#">/?code=FI9IRQ&tno=10</a></td>
+                          <td></td>
+                          <td>050713283588</td>
+                          <td>
+                            <span>신유경의 맛있는 경양식 수제돈까스</span>
+                          </td>
+                          <td>1번</td>
+                          <td>사용</td>
+                          <td>
+                            <div class="inquiry_edit">
+                              <a href="#">다운</a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="sub_tab_cont">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th class="inquiry_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </th>
+                          <th>
+                            <div class="order_option_box">
+                              <div class="order_select">
+                                <a href="#"
+                                  >발주
+                                  <i class="icon_order_down"></i>
+                                </a>
+                              </div>
+                              <ul class="order_option">
+                                <li><a href="#">발주</a></li>
+                                <li><a href="#">미발주</a></li>
+                              </ul>
+                            </div>
+                          </th>
+                          <th>코드</th>
+                          <th>URL</th>
+                          <th>QR코드</th>
+                          <th>가맹점ID</th>
+                          <th>설치장소</th>
+                          <th>
+                            <div class="order_option_box">
+                              <div class="order_select">
+                                <a href="#"
+                                  >테이블번호
+                                  <i class="icon_order_down"></i>
+                                </a>
+                              </div>
+                              <ul class="order_option">
+                                <li><a href="#">1번</a></li>
+                                <li><a href="#">2번</a></li>
+                                <li><a href="#">3번</a></li>
+                                <li><a href="#">4번</a></li>
+                                <li><a href="#">5번</a></li>
+                                <li><a href="#">6번</a></li>
+                                <li><a href="#">7번</a></li>
+                                <li><a href="#">8번</a></li>
+                                <li><a href="#">9번</a></li>
+                                <li><a href="#">10번</a></li>
+                              </ul>
+                            </div>
+                          </th>
+                          <th>상태</th>
+                          <th>QR생성</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="inquity_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </td>
+                          <td>발주</td>
+                          <td>FHBWVV</td>
+                          <td><a href="#">/?code=FI9IRQ&tno=10</a></td>
+                          <td></td>
+                          <td>050713283588</td>
+                          <td>
+                            <span>신유경의 맛있는 경양식 수제돈까스</span>
+                          </td>
+                          <td>1번</td>
+                          <td>사용</td>
+                          <td>
+                            <div class="inquiry_edit">
+                              <a href="#">다운</a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <td class="inquity_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </td>
+                          <td>발주</td>
+                          <td>FHBWVV</td>
+                          <td><a href="#">/?code=FI9IRQ&tno=10</a></td>
+                          <td></td>
+                          <td>050713283588</td>
+                          <td>
+                            <span>신유경의 맛있는 경양식 수제돈까스</span>
+                          </td>
+                          <td>1번</td>
+                          <td>사용</td>
+                          <td>
+                            <div class="inquiry_detail">
+                              <a href="#">생성</a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <td class="inquity_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </td>
+                          <td>발주</td>
+                          <td>FHBWVV</td>
+                          <td><a href="#">/?code=FI9IRQ&tno=10</a></td>
+                          <td></td>
+                          <td>050713283588</td>
+                          <td>
+                            <span>신유경의 맛있는 경양식 수제돈까스</span>
+                          </td>
+                          <td>1번</td>
+                          <td>사용</td>
+                          <td>
+                            <div class="inquiry_detail">
+                              <a href="#">생성</a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <td class="inquity_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </td>
+                          <td>발주</td>
+                          <td>FHBWVV</td>
+                          <td><a href="#">/?code=FI9IRQ&tno=10</a></td>
+                          <td></td>
+                          <td>050713283588</td>
+                          <td>
+                            <span>마산수산</span>
+                          </td>
+                          <td>1번</td>
+                          <td>사용</td>
+                          <td>
+                            <div class="inquiry_detail">
+                              <a href="#">생성</a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <td class="inquity_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </td>
+                          <td>발주</td>
+                          <td>FHBWVV</td>
+                          <td><a href="#">/?code=FI9IRQ&tno=10</a></td>
+                          <td></td>
+                          <td>050713283588</td>
+                          <td>
+                            <span>신유경의 맛있는 경양식 수제돈까스</span>
+                          </td>
+                          <td>1번</td>
+                          <td>사용</td>
+                          <td>
+                            <div class="inquiry_edit">
+                              <a href="#">다운</a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="sub_tab_cont">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th class="inquiry_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </th>
+                          <th>
+                            <div class="order_option_box">
+                              <div class="order_select">
+                                <a href="#"
+                                  >발주
+                                  <i class="icon_order_down"></i>
+                                </a>
+                              </div>
+                              <ul class="order_option">
+                                <li><a href="#">발주</a></li>
+                                <li><a href="#">미발주</a></li>
+                              </ul>
+                            </div>
+                          </th>
+                          <th>코드</th>
+                          <th>URL</th>
+                          <th>QR코드</th>
+                          <th>가맹점ID</th>
+                          <th>설치장소</th>
+                          <th>
+                            <div class="order_option_box">
+                              <div class="order_select">
+                                <a href="#"
+                                  >테이블번호
+                                  <i class="icon_order_down"></i>
+                                </a>
+                              </div>
+                              <ul class="order_option">
+                                <li><a href="#">1번</a></li>
+                                <li><a href="#">2번</a></li>
+                                <li><a href="#">3번</a></li>
+                                <li><a href="#">4번</a></li>
+                                <li><a href="#">5번</a></li>
+                                <li><a href="#">6번</a></li>
+                                <li><a href="#">7번</a></li>
+                                <li><a href="#">8번</a></li>
+                                <li><a href="#">9번</a></li>
+                                <li><a href="#">10번</a></li>
+                              </ul>
+                            </div>
+                          </th>
+                          <th>상태</th>
+                          <th>QR생성</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="inquity_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </td>
+                          <td id="uninstall">미발주</td>
+                          <td>FHBWVV</td>
+                          <td><a href="#">/?code=FI9IRQ&tno=10</a></td>
+                          <td>
+                            <a href="#" class="qr_icon_btn"
+                              ><img
+                                src="img/image/qr_small_img.png"
+                                alt="QR코드"
+                            /></a>
+                            <div class="qr_modal">
+                              <div class="qr_modal_box"></div>
+                              <div class="qr_modal_card">
+                                <img
+                                  src="img/image/qr_big_img.png"
+                                  alt="QR코드"
+                                />
+                              </div>
+                            </div>
+                          </td>
+                          <td>050713283588</td>
+                          <td>
+                            <span>마산수산</span>
+                          </td>
+                          <td>1번</td>
+                          <td id="uninstall">미사용</td>
+                          <td>
+                            <div>
+                              <a href="#">생성</a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <td class="inquity_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </td>
+                          <td>발주</td>
+                          <td>FHBWVV</td>
+                          <td><a href="#">/?code=FI9IRQ&tno=10</a></td>
+                          <td></td>
+                          <td>050713283588</td>
+                          <td>
+                            <span>신유경의 맛있는 경양식 수제돈까스</span>
+                          </td>
+                          <td>1번</td>
+                          <td id="uninstall">미사용</td>
+                          <td>
+                            <div>
+                              <a href="#">생성</a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <td class="inquity_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </td>
+                          <td id="uninstall">미발주</td>
+                          <td>FHBWVV</td>
+                          <td><a href="#">/?code=FI9IRQ&tno=10</a></td>
+                          <td></td>
+                          <td>050713283588</td>
+                          <td>
+                            <span>마산수산</span>
+                          </td>
+                          <td>1번</td>
+                          <td id="uninstall">미사용</td>
+                          <td>
+                            <div class="inquiry_edit">
+                              <a href="#">다운</a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <td class="inquity_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </td>
+                          <td id="uninstall">미발주</td>
+                          <td>FHBWVV</td>
+                          <td><a href="#">/?code=FI9IRQ&tno=10</a></td>
+                          <td></td>
+                          <td>050713283588</td>
+                          <td>
+                            <div class="connect_btn">
+                              <button>연결</button>
+                              <ul class="connect_regist">
+                                <h3>점포명</h3>
+                                <div class="connect_regist_card">
+                                  <div class="search_option_box">
+                                    <div class="search_select">
+                                      <a href="#"
+                                        >선택하세요
+                                        <i class="icon_id_down"></i>
+                                      </a>
+                                    </div>
+                                    <ul class="search_option">
+                                      <li>
+                                        <input
+                                          type="text"
+                                          placeholder="검색어 입력"
+                                        />
+                                      </li>
+                                      <li>
+                                        <a href="#">달반늘</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">88회관</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">로아루</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">복이분식</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">갈비맛있다</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div><button>연결 등록</button></div>
+                                </div>
+                              </ul>
+                            </div>
+                          </td>
+                          <td>1번</td>
+                          <td id="uninstall">미사용</td>
+                          <td>
+                            <div class="inquiry_edit">
+                              <a href="">다운</a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <td class="inquity_ck">
+                            <label class="check_box">
+                              <input type="checkbox" />
+                              <span class="check_box_icon"></span>
+                            </label>
+                          </td>
+                          <td id="uninstall">미발주</td>
+                          <td>FHBWVV</td>
+                          <td><a href="#">/?code=FI9IRQ&tno=10</a></td>
+                          <td></td>
+                          <td>050713283588</td>
+                          <td>
+                            <span>마산수산</span>
+                          </td>
+                          <td>1번</td>
+                          <td id="uninstall">미사용</td>
+                          <td>
+                            <div class="inquiry_edit">
+                              <a href="#">다운</a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="pagination">
+                  <a href="#">
+                    <i class="icon_pg_left_off"></i>
+                    <i class="icon_pg_left_on"></i>
+                  </a>
+                  <a href="#">1</a>
+                  <a href="#">2</a>
+                  <a href="#">3</a>
+                  <a href="#">4</a>
+                  <a href="#">5</a>
+                  <a href="#">6</a>
+                  <a href="#">7</a>
+                  <a href="#">8</a>
+                  <a href="#">9</a>
+                  <a href="#">10</a>
+                  <a href="#">
+                    <i class="icon_pg_right_off"></i>
+                    <i class="icon_pg_right_on"></i>
+                  </a>
+                </div>
+              </section>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
